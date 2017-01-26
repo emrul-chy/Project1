@@ -7,7 +7,7 @@
 * *                     Metropolitan University                   * *
 * *                          Language: C++                        * *
 * *                                                               * *
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 #include <bits/stdc++.h>
@@ -21,7 +21,9 @@ using namespace std;
 #define Casen(j)        printf("Case %ld:\n", j)
 #define Casee(j)        printf("Case #%ld: ", j)
 
-#define mem(n)          memset(n,-1,sizeof(n))
+#define mem0(n)         memset(n,0,sizeof(n))
+#define mem_1(n)        memset(n,-1,sizeof(n))
+#define mem1(n)         memset(n,1,sizeof(n))
 #define for1(i, n)      for(i=1; i<=n; i++)
 #define for0(i, n)      for(i=0; i<n; i++)
 #define rf0(i, n)       for(i=n-1; i>=0; i--)
@@ -42,8 +44,8 @@ using namespace std;
 #define in3(a, b, c)    cin >> a >> b >> c
 #define in4(a, b, c, d) cin >> a >> b >> c >> d
 #define pn(a)           cout << a << endl
-#define pn2(a, b)       cout << a << " " << b <<endl
-#define pn3(a, b, c)    cout << a << " " << b << " " << c <<endl
+#define pn2(a, b)       cout << a << " " << b << endl
+#define pn3(a, b, c)    cout << a << " " << b << " " << c << endl
 #define pa(a)           cout << a
 #define sp              printf(" ")
 #define nl              printf("\n")
@@ -124,5 +126,5 @@ map <char, ll> mpc;
 
 int main()
 {
-
+    // i will here :)
 }
