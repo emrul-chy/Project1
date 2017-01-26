@@ -29,14 +29,15 @@ using namespace std;
 #define rf0(i, n)       for(i=n-1; i>=0; i--)
 #define rf1(i, n)       for(i=n; i>=1; i--)
 #define forab(i, a, b)  for(i=a; i<=b; i++)
+#define rfab(i, a, b)   for(i=b; i>=a; i--)
 
 #define pb              push_back
 #define YES             printf("YES\n")
 #define NO              printf("NO\n")
 #define Yes             printf("Yes\n")
 #define No              printf("No\n")
-#define pf              printf
-#define sf              scanf
+#define pnf             printf
+#define scf             scanf
 #define sin(s)          getline(cin, s)
 
 #define in(a)           cin >> a
@@ -55,6 +56,7 @@ using namespace std;
 #define sq(n)           (ll) n * n
 #define sz(s)           s.size()
 #define bug(n)          cout << ">> " << n << " <<" << endl
+#define debug           printf(">> I am here <<\n");
 #define gc              getchar()
 #define min3(a, b, c)   min(a, min(b, c))
 #define max3(a, b, c)   max(a, max(b, c))
