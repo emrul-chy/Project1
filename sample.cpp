@@ -47,7 +47,8 @@ using namespace std;
 #define pn(a)           cout << a << endl
 #define pn2(a, b)       cout << a << " " << b << endl
 #define pn3(a, b, c)    cout << a << " " << b << " " << c << endl
-#define pa(a)           cout << a
+#define pa(a)           cout << a << " "
+#define pf(a)           cout << a
 #define sp              printf(" ")
 #define nl              printf("\n")
 
