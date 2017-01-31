@@ -47,8 +47,7 @@ using namespace std;
 #define pn(a)           cout << a << endl
 #define pn2(a, b)       cout << a << " " << b << endl
 #define pn3(a, b, c)    cout << a << " " << b << " " << c << endl
-#define pa(a)           cout << a << " "
-#define pf(a)           cout << a
+#define pa(a)           cout << a
 #define sp              printf(" ")
 #define nl              printf("\n")
 
@@ -87,8 +86,7 @@ ll bigMod(ll a, ll b, ll c)
     return x;
 }
 
-ll p[1100002];
-vector <ll> prime;
+ll p[1100002], prime[1100002];
 
 void sieve()
 {
@@ -107,15 +105,17 @@ void sieve()
             }
         }
     }
+    j=2;
     p[1] = 1;
     p[0] = 1;
-    prime.pb(2);
-    prime.pb(3);
+    prime[0] = 2;
+    prime[1] = 3;
     for(i=3; i<=N; i+=2)
     {
         if(p[i]==0)
         {
-            prime.pb(i);
+            prime[j] = i;
+            j++;
         }
     }
 }
