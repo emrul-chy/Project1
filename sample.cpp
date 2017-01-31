@@ -111,7 +111,7 @@ void sieve()
     p[0] = 1;
     prime.pb(2);
     prime.pb(3);
-    for(i=4; i<=N; i+=2)
+    for(i=3; i<=N; i+=2)
     {
         if(p[i]==0)
         {
