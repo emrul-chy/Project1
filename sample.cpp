@@ -18,20 +18,16 @@ using namespace std;
 #define LCM(a,b)        (a / __gcd(a,b) ) * b
 #define gcd(a,b)        __gcd(a,b)
 #define Case(j)         printf("Case %ld: ", j)
-#define Casen(j)        printf("Case %ld:\n", j)
-#define Casee(j)        printf("Case #%ld: ", j)
 
-#define mem0(n)         memset(n,0,sizeof(n))
-#define mem_1(n)        memset(n,-1,sizeof(n))
-#define mem1(n)         memset(n,1,sizeof(n))
+#define mem(a, n)       memset(a,n,sizeof(a))
 #define for1(i, n)      for(i=1; i<=n; i++)
 #define for0(i, n)      for(i=0; i<n; i++)
-#define rf0(i, n)       for(i=n-1; i>=0; i--)
-#define rf1(i, n)       for(i=n; i>=1; i--)
+#define rof0(i, n)      for(i=n-1; i>=0; i--)
+#define rof1(i, n)      for(i=n; i>=1; i--)
 #define forab(i, a, b)  for(i=a; i<=b; i++)
 #define rfab(i, a, b)   for(i=b; i>=a; i--)
 
-#define pb              push_back
+#define p_b             push_back
 #define YES             printf("YES\n")
 #define NO              printf("NO\n")
 #define Yes             printf("Yes\n")
@@ -47,7 +43,8 @@ using namespace std;
 #define pn(a)           cout << a << endl
 #define pn2(a, b)       cout << a << " " << b << endl
 #define pn3(a, b, c)    cout << a << " " << b << " " << c << endl
-#define pa(a)           cout << a
+#define pa(a)           cout << a << " "
+#define pf(a)           cout << a
 #define sp              printf(" ")
 #define nl              printf("\n")
 
@@ -129,5 +126,5 @@ map <char, ll> mpc;
 
 int main()
 {
-    // i will here :)
+
 }
