@@ -1,5 +1,4 @@
 // Bismillahir Rahmanir Rahim
-// Mr_Emrul
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -18,8 +17,10 @@ typedef map <string, int> mpsi;
 typedef map <int, int> mii;
 typedef map <ll, ll> mll;
 typedef map <pll, ll> mpll;
+
 const ll MX = 2000005;
 const ll mod = 1e7 + 10;
+const ll inf = 1LL << 62;
 
 #define LCM(a,b)        (a / __gcd(a,b) ) *-b
 #define gcd(a,b)        __gcd(a,b)
@@ -52,8 +53,8 @@ const ll mod = 1e7 + 10;
 #define bug(n)          cout << ">> " << n << " <<" << endl
 #define min3(a, b, c)   min(a, min(b, c))
 #define max3(a, b, c)   max(a, max(b, c))
-#define in              freopen("in.txt", "r", stdin)
-#define out             freopen("out.txt", "w", stdout)
+#define in              freopen("input.txt", "r", stdin)
+#define out             freopen("output.txt", "w", stdout)
 #define fast            { ios_base::sync_with_stdio(false); cin.tie(0); }
 #define F               first
 #define S               second
@@ -61,7 +62,7 @@ const ll mod = 1e7 + 10;
 
 int main()
 {
-    fast;
-    ll n, t, q, i, j, cnt=0, sum=0, mx=0, mn=1e18;
+    ll t, i, j, sum=0, mx=0, mn = inf, x, y, a, b, c, n, m, q, k;
     
+    return 0;
 }
