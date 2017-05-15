@@ -4,6 +4,8 @@
 using namespace std;
 
 typedef long long int ll;
+typedef unsigned long long int ull;
+typedef long double;
 typedef vector <int> vi;
 typedef vector <ll> vl;
 typedef pair <ll, ll> pll;
@@ -15,6 +17,7 @@ typedef vector < pll > vll;
 typedef map <string, ll> mpsl;
 typedef map <string, int> mpsi;
 typedef map <int, int> mii;
+typedef map <pii, int> mpii;
 typedef map <ll, ll> mll;
 typedef map <pll, ll> mpll;
 
@@ -22,16 +25,22 @@ const ll MX = 2000005;
 const ll mod = 1e7 + 10;
 const ll inf = 1LL << 62;
 
-#define LCM(a,b)        (a / __gcd(a,b) ) *-b
+int dx4[] = {0, 0, -1, 0};
+int dy4[] = {1, -1, 0, 0};
+
+int dx[] = {1, 1, 1, 0, 0, -1, -1, -1};
+int dy[] = {1, 0, -1, 1, -1, 1, 0, -1};
+
+#define LCM(a,b)        (a / __gcd(a,b) ) *b
 #define gcd(a,b)        __gcd(a,b)
 #define all(x)          (x).begin(), (x).end()
-#define mem(a, n)       memset(a,n,sizeof(a))
-#define for1(i, n)      for(i=1; i<=n; i++)
-#define for0(i, n)      for(i=0; i<n; i++)
-#define rof0(i, n)      for(i=n-1; i>=0; i--)
-#define rof1(i, n)      for(i=n; i>=1; i--)
-#define forab(i, a, b)  for(i=a; i<=b; i++)
-#define rofab(i, a, b)  for(i=b; i>=a; i--)
+#define mem(a, n)       memset(a, n, sizeof(a))
+#define for1(i, n)      for(int i=1; i<=n; i++)
+#define for0(i, n)      for(int i=0; i<n; i++)
+#define rof0(i, n)      for(int i=n-1; i>=0; i--)
+#define rof1(i, n)      for(int i=n; i>=1; i--)
+#define forab(i, a, b)  for(int i=a; i<=b; i++)
+#define rofab(i, a, b)  for(int i=b; i>=a; i--)
 #define pb              push_back
 #define pbb             pop_back
 #define YES             cout << "YES" << endl
