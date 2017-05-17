@@ -71,7 +71,7 @@ int dy[] = {1, 0, -1, 1, -1, 1, 0, -1};
 
 int main()
 {
-    ll t, i, j, sum=0, mx=0, mn = inf, x, y, a, b, c, n, m, q, k;
+    ll t, i, j, sum=0, cnt=0, mx=0, mn = inf, x, y, a, b, c, n, m, q, k;
     
     return 0;
 }
