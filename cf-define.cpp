@@ -25,7 +25,7 @@ const ll MX = 2000005;
 const ll mod = 1e7 + 10;
 const ll inf = 1LL << 62;
 
-int dx4[] = {0, 0, -1, 0};
+int dx4[] = {0, 0, -1, 1};
 int dy4[] = {1, -1, 0, 0};
 
 int dx[] = {1, 1, 1, 0, 0, -1, -1, -1};
