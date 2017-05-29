@@ -14,15 +14,9 @@ typedef pair <int, int> pii;
 typedef pair <int, pii> pip;
 typedef vector < pii > vii;
 typedef vector < pll > vll;
-typedef map <string, ll> mpsl;
-typedef map <string, int> mpsi;
-typedef map <int, int> mii;
-typedef map <pii, int> mpii;
-typedef map <ll, ll> mll;
-typedef map <pll, ll> mpll;
 
 const ll MX = 2000005;
-const ll mod = 1e7 + 10;
+const ll mod = 1e9 + 7;
 const ll inf = 1LL << 62;
 
 int dx4[] = {0, 0, -1, 1};
@@ -68,6 +62,13 @@ int dy[] = {1, 0, -1, 1, -1, 1, 0, -1};
 #define F               first
 #define S               second
 #define mpp             make_pair
+
+//string s;
+//vector<ll> v;
+//vector<ll> v[MX];
+//ll ar[MX], br[MX];
+//ll vist[MX];
+//map<ll,ll> mp;
 
 int main()
 {
