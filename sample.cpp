@@ -1,64 +1,93 @@
-/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* *                                                               * *
-* *                   Bismillahir Rahmanir Rahim                  * *
-* *                                                               * *
-* *                     Author: Emrul Chowdhury                   * *
-* *                     Metropolitan University                   * *
-* *                          Language: C++                        * *
-* *                                                               * *
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+// Bismillahir Rahmanir Rahim
 
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll              long long int
-#define MX              123456
-#define LCM(a,b)        (a / __gcd(a,b) ) * b
-#define gcd(a,b)        __gcd(a,b)
-#define Case(j)         printf("Case %ld: ", j)
+typedef long long int ll;
+typedef unsigned long long int ull;
+typedef long double ld;
+typedef vector <int> vi;
+typedef vector <ll> vl;
+typedef pair <ll, ll> pll;
+typedef pair <ll, pll> plp;
+typedef pair <int, int> pii;
+typedef pair <int, pii> pip;
 
-#define mem(a, n)       memset(a,n,sizeof(a))
-#define for1(i, n)      for(i=1; i<=n; i++)
-#define for0(i, n)      for(i=0; i<n; i++)
-#define rof0(i, n)      for(i=n-1; i>=0; i--)
-#define rof1(i, n)      for(i=n; i>=1; i--)
-#define forab(i, a, b)  for(i=a; i<=b; i++)
-#define rfab(i, a, b)   for(i=b; i>=a; i--)
+const int MX = 2e6+5;
+const int mod = 1e9 + 7;
+const ll inf = 1LL << 64;
 
-#define p_b             push_back
-#define YES             printf("YES\n")
-#define NO              printf("NO\n")
-#define Yes             printf("Yes\n")
-#define No              printf("No\n")
-#define pnf             printf
-#define scf             scanf
-#define sin(s)          getline(cin, s)
+int dx4[] = {0, 0, -1, 1};
+int dy4[] = {1, -1, 0, 0};
 
-#define in(a)           cin >> a
-#define in2(a, b)       cin >> a >> b
-#define in3(a, b, c)    cin >> a >> b >> c
-#define in4(a, b, c, d) cin >> a >> b >> c >> d
-#define pn(a)           cout << a << endl
-#define pn2(a, b)       cout << a << " " << b << endl
-#define pn3(a, b, c)    cout << a << " " << b << " " << c << endl
-#define pa(a)           cout << a << " "
-#define pf(a)           cout << a
-#define sp              printf(" ")
-#define nl              printf("\n")
+int dx[] = {1, 1, 1, 0, 0, -1, -1, -1};
+int dy[] = {1, 0, -1, 1, -1, 1, 0, -1};
 
-#define all(x)          (x).begin(), (x).end()
-#define cl(v)           v.clear()
-#define sq(n)           (ll) n * n
-#define sz(s)           s.size()
-#define bug(n)          cout << ">> " << n << " <<" << endl
-#define debug           printf(">> I am here <<\n");
-#define gc              getchar()
-#define min3(a, b, c)   min(a, min(b, c))
-#define max3(a, b, c)   max(a, max(b, c))
+// TOOLS
+# define LCM(a,b)        (a / __gcd(a,b) ) *b
+# define gcd(a,b)        __gcd(a,b)
+# define all(x)          (x).begin(), (x).end()
+# define mem(a, n)       memset(a, n, sizeof(a))
+# define for1(i, n)      for(int i=1; i<=n; i++)
+# define for0(i, n)      for(int i=0; i<n; i++)
+# define rof0(i, n)      for(int i=n-1; i>=0; i--)
+# define rof1(i, n)      for(int i=n; i>=1; i--)
+# define forab(i, a, b)  for(int i=a; i<=b; i++)
+# define rofab(i, a, b)  for(int i=b; i>=a; i--)
+# define pb              push_back
+# define pbb             pop_back
 
-ll vowel(char a)
+// CIN/COUT
+# define YES             cout << "YES" << endl
+# define NO              cout << "NO" << endl
+# define sin(s)          getline(cin, s)
+# define scf(a)          cin >> a
+# define scf2(a, b)      cin >> a >> b
+# define scf3(a, b, c)   cin >> a >> b >> c
+# define scf4(a,b,c,d)   cin >> a >> b >> c >> d
+# define pnf(a)          cout << (a) << endl
+# define pnf2(a, b)      cout << (a) << " " << (b) << endl
+# define pnf3(a, b, c)   cout << (a) << " " << (b) << " " << (c) << endl
+# define bug(n)          cout << ">> " << n << " <<" << endl
+# define pnfa(a)         cout << (a) << " "
+# define pf(a)           cout << (a)
+# define sp              cout << " "
+# define nl              cout << endl
+
+// FAST I/O
+# define fYES            printf("YES\n")
+# define fNO             printf("NO\n")
+# define Sin(s)          gets(s)
+# define Scf(a)          scanf("%lld", &a)
+# define Scf2(a, b)      scanf("%lld %lld", &a, &b)
+# define Scf3(a, b, c)   scanf("%lld %lld %lld", &a, &b, &c)
+# define Scf4(a,b,c,d)   scanf("%lld %lld %lld %lld", &a, &b, &c, &d)
+# define Pnf(a)          printf("%lld\n", a)
+# define Pnf2(a, b)      printf("%lld %lld\n", a, b)
+# define Pnf3(a, b, c)   printf("%lld %lld %lld\n", a, b, c)
+# define Bug(n)          printf(">> %lld <<\n", n)
+# define Pnfa(a)         printf("%lld ", a)
+# define Pf(a)           printf("%lld", a)
+# define Sp              printf(" ")
+# define Nl              printf("\n")
+
+// OTHER
+# define sz(n)           n.size()
+# define clr(v)          v.clear()
+# define min3(a, b, c)   min(a, min(b, c))
+# define max3(a, b, c)   max(a, max(b, c))
+# define in              freopen("input.txt", "r", stdin)
+# define out             freopen("output.txt", "w", stdout)
+# define fast            { ios_base::sync_with_stdio(false); cin.tie(0); }
+# define F               first
+# define S               second
+# define mpp             make_pair
+
+
+///          IMPORTANT FUNCTIOM           ///
+
+
+ll isVowel(char a)
 {
     a = toupper(a);
     if((a == 'A') || (a == 'E') || (a == 'I') || (a == 'O') || (a == 'U'))
@@ -83,7 +112,24 @@ ll bigMod(ll a, ll b, ll c)
     return x;
 }
 
-ll p[1100002], prime[1100002];
+ll fac(ll n)
+{
+    if(n == 1)
+        return 1;
+    return n*fac(n-1);
+}
+
+ll power(ll n, ll k)
+{
+    ll ans = 0;
+    for1(i, k)
+    {
+        ans *= n;
+    }
+    return ans;
+}
+
+ll p[1100002];
 
 void sieve()
 {
@@ -102,29 +148,26 @@ void sieve()
             }
         }
     }
-    j=2;
     p[1] = 1;
     p[0] = 1;
-    prime[0] = 2;
-    prime[1] = 3;
-    for(i=3; i<=N; i+=2)
-    {
-        if(p[i]==0)
-        {
-            prime[j] = i;
-            j++;
-        }
-    }
 }
 
-ll ar[123456];
-vector <ll> v;
-string s;
-map <ll, ll> mp;
-map <string, ll> mps;
-map <char, ll> mpc;
+//string s;
+//vector<ll> v;
+//vector<ll> v[MX];
+//ll ar[MX], br[MX];
+//ll vist[MX];
+//map<ll,ll> mp;
+
+
+
+///           MAIN FUNCTION           ///
+
+
 
 int main()
 {
+    ll n, t, k, q, cnt=0, mx=0, mn=inf;
 
+    return 0;
 }
