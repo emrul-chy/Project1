@@ -121,7 +121,7 @@ ll fac(ll n)
 
 ll power(ll n, ll k)
 {
-    ll ans = 0;
+    ll ans = 1;
     for1(i, k)
     {
         ans *= n;
@@ -168,6 +168,6 @@ void sieve()
 int main()
 {
     ll n, t, k, q, cnt=0, mx=0, mn=inf;
-    Pnf(mn);
+    
     return 0;
 }
