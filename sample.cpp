@@ -15,7 +15,7 @@ typedef pair <int, pii> pip;
 
 const int MX = 2e6+5;
 const int mod = 1e9 + 7;
-const ll inf = 1LL << 64;
+const ll inf = 1LL << 62;
 
 int dx4[] = {0, 0, -1, 1};
 int dy4[] = {1, -1, 0, 0};
@@ -168,6 +168,6 @@ void sieve()
 int main()
 {
     ll n, t, k, q, cnt=0, mx=0, mn=inf;
-
+    Pnf(mn);
     return 0;
 }
