@@ -13,9 +13,9 @@ typedef pair <ll, pll> plp;
 typedef pair <int, int> pii;
 typedef pair <int, pii> pip;
 
-const int MX = 2e5+5;
+const int MX = 2e6+10;
 const int mod = 1e9 + 7;
-const ll inf = 1LL << 64;
+const ll inf = 1LL << 62;
 
 int dx4[] = {0, 0, -1, 1};
 int dy4[] = {1, -1, 0, 0};
@@ -62,14 +62,14 @@ int dy[] = {1, 0, -1, 1, -1, 1, 0, -1};
 # define Scf2(a, b)      scanf("%lld %lld", &a, &b)
 # define Scf3(a, b, c)   scanf("%lld %lld %lld", &a, &b, &c)
 # define Scf4(a,b,c,d)   scanf("%lld %lld %lld %lld", &a, &b, &c, &d)
-# define Pnf(a)          scanf("%lld\n", a)
-# define Pnf2(a, b)      scanf("%lld %lld\n", a, b)
-# define Pnf3(a, b, c)   scanf("%lld %lld %lld\n", a, b, c)
+# define Pnf(a)          printf("%lld\n", a)
+# define Pnf2(a, b)      printf("%lld %lld\n", a, b)
+# define Pnf3(a, b, c)   printf("%lld %lld %lld\n", a, b, c)
 # define Bug(n)          printf(">> %lld <<\n", n)
-# define Pnfa(a)         scanf("%lld ", a)
-# define Pf(a)           scanf("%lld", a)
-# define Sp              scanf(" ")
-# define Nl              scanf("\n")
+# define Pnfa(a)         printf("%lld ", a)
+# define Pf(a)           printf("%lld", a)
+# define Sp              printf(" ")
+# define Nl              printf("\n")
 
 // OTHER
 # define sz(n)           n.size()
