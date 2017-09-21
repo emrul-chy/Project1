@@ -94,7 +94,7 @@ int dy[] = { 1, 0, -1, 1, -1, 1, 0, -1 };
 
 int main()
 {
-    ll n, m, k, q, t, cnt = 0, ans = -1, mx = -inf, mn = inf ;
-    
+    ll n, m, k, q, t, cnt = 0, sum = 0, mx = -inf, mn = inf ;
+
     return 0;
 }
