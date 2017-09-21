@@ -55,7 +55,7 @@ int dy[] = { 1, 0, -1, 1, -1, 1, 0, -1 };
 #define sp              cout << " "
 #define nl              cout << endl
 
-// FAST I/O
+// SCANF/PRINTF
 #define fYES            printf("YES\n")
 #define fNO             printf("NO\n")
 #define Sin(s)          gets(s)
@@ -73,7 +73,7 @@ int dy[] = { 1, 0, -1, 1, -1, 1, 0, -1 };
 #define Sp              printf(" ")
 #define Nl              printf("\n")
 
-// OTHER
+// OTHERS
 #define saz(n)          n.size()
 #define clr(v)          v.clear()
 #define min3(a, b, c)   min(a, min(b, c))
